@@ -7,46 +7,58 @@ import '@fontsource/ibm-plex-mono/600.css';
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Carlos Castellanos - Software Developer & Solutions Architect" />
+    <meta name="description" content="Carlos Castellanos - Software engineer - @karloscodes" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Carlos Castellanos - Software Developer</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Carlos Castellanos" />
+    <meta property="og:description" content="A software engineer passionate about building things" />
+    <meta property="og:image" content="/avatar.jpg" />
+    <meta property="og:url" content="https://karloscodes.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@karloscodes" />
+    
+    <title>Carlos Castellanos</title>
   </head>
-  <body class="bg-white min-h-screen">
+  <body class="bg-white dark:bg-[#121826] min-h-screen transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <!-- Main Content -->
-      <main class="flex flex-col items-center justify-center mt-32">
+      <main class="flex flex-col items-center justify-center mt-32 px-4 sm:px-0">
         <div class="w-44 h-44 relative mb-16">
           <img 
             src="/avatar.jpg" 
-            alt="Carlos Castellanos the Software Developer" 
-            class="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl grayscale"
+            alt="Carlos Castellanos (@karloscodes) the software engineer" 
+            class="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
             style="object-position: center 1%;"
           />
         </div>
         
-        <h1 class="text-4xl font-bold mb-4 text-center flex items-center">
-          CARLOS CASTELLANOS VERA
-          <span class="ml-2 inline-block w-3 h-0.5 bg-black animate-blink"></span>
+        <h1 class="text-4xl font-bold mb-2 text-center text-[#15141A] dark:text-white">
+          CARLOS CASTELLANOS
         </h1>
         
-        <p class="text-gray-600 mb-12 tracking-wide">
-          SOFTWARE DEVELOPER & SOLUTIONS ARCHITECT
+        <p class="text-[#2f3237] dark:text-gray-400 mb-4 tracking-wide text-lg text-center max-w-lg flex items-center justify-center">
+          A software engineer passionate about building things
+          <span class="inline-block ml-[3px] h-[1.125em] w-[2px] bg-[#2f3237] dark:bg-gray-400 animate-[blink_1s_steps(2,_start)_infinite] translate-y-[0px]"></span>
         </p>
         
-        <div class="flex gap-8 mb-16">
-          <a href="https://github.com/karloscodes" class="nav-link gradient-alt">/GITHUB</a>
-          <a href="https://linkedin.com/in/karloscodes" class="nav-link gradient-alt">/LINKEDIN</a>
-          <a href="https://twitter.com/karloscodes" class="nav-link gradient-alt">/TWITTER</a>
-          <a href="/blog" class="nav-link gradient-alt">/BLOG</a>
+        <div class="flex flex-wrap justify-center gap-8 mb-12">
+					<a target="_blank" href="https://linkedin.com/in/karloscodes" class="nav-link text-[#15141A] dark:text-gray-200">LINKEDIN</a>
+					<a target="_blank" href="https://x.com/karloscodes" class="nav-link text-[#15141A] dark:text-gray-200">X</a>
+					<a target="_blank" href="https://bsky.app/profile/karloscodes.com" class="nav-link text-[#15141A] dark:text-gray-200">BLUESKY</a>
+					<a target="_blank" href="https://blog.karloscodes.com" class="nav-link text-[#15141A] dark:text-gray-200">WRITINGS</a>
         </div>
 
         <!-- Products Section -->
         <div class="flex flex-col gap-4 items-center w-full max-w-sm">
+          <p class="text-sm text-[#5B5B66] dark:text-gray-400 mb-4 font-medium tracking-wider">FEATURED WORK</p>
+          
           <a 
             href="https://pomotto.app" 
-            class="w-full inline-flex items-center justify-between px-8 py-3 rounded-full border border-black bg-white text-black font-mono text-sm group hover:bg-black hover:text-white transition-all duration-200"
+            target="_blank"
+            class="w-full inline-flex items-center justify-between px-8 py-3 rounded-full border border-[#15141A] dark:border-white bg-white dark:bg-transparent text-[#15141A] dark:text-white font-mono text-sm group hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200"
           >
             <span>Pomotto</span>
             <svg 
@@ -66,7 +78,8 @@ import '@fontsource/ibm-plex-mono/600.css';
           
           <a 
             href="https://karloscodes.gumroad.com/l/team-1-1" 
-            class="w-full inline-flex items-center justify-between px-8 py-3 rounded-full border border-black bg-white text-black font-mono text-sm group hover:bg-black hover:text-white transition-all duration-200"
+            target="_blank"
+            class="w-full inline-flex items-center justify-between px-8 py-3 rounded-full border border-[#15141A] dark:border-white bg-white dark:bg-transparent text-[#15141A] dark:text-white font-mono text-sm group hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200"
           >
             <span>Engineering managers 1:1 guide</span>
             <svg 
