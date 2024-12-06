@@ -1,11 +1,58 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../styles/global.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/600.css';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Carlos Castellanos - Software Developer & Solutions Architect" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Carlos Castellanos - Software Developer</title>
+  </head>
+  <body class="bg-white min-h-screen">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <!-- Navigation -->
+      <nav class="flex justify-between items-center">
+        <div>
+          <a href="/" class="nav-link gradient-alt">HOME</a>
+        </div>
+        <div class="flex gap-8">
+          <a href="/blog" class="nav-link gradient-alt">BLOG</a>
+          <a href="/about" class="nav-link gradient-alt">ABOUT</a>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="flex flex-col items-center justify-center mt-32">
+        <div class="w-44 h-44 relative mb-16">
+          <img 
+            src="/avatar.jpg" 
+            alt="Carlos Castellanos the Software Developer" 
+            class="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl grayscale"
+            style="object-position: center 1%;"
+          />
+        </div>
+        
+        <h1 class="text-4xl font-bold mb-4 text-center flex items-center">
+          CARLOS CASTELLANOS VERA
+          <span class="ml-2 inline-block w-3 h-0.5 bg-black animate-blink"></span>
+        </h1>
+        
+        <p class="text-gray-600 mb-12 tracking-wide">
+          SOFTWARE DEVELOPER & SOLUTIONS ARCHITECT
+        </p>
+        
+        <div class="flex gap-8">
+          <a href="https://github.com/karloscodes" class="nav-link gradient-alt">/GITHUB</a>
+          <a href="https://linkedin.com/in/karloscodes" class="nav-link gradient-alt">/LINKEDIN</a>
+          <a href="https://twitter.com/karloscodes" class="nav-link gradient-alt">/TWITTER</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

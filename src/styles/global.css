@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply font-mono 
+           text-sm 
+           font-bold 
+           tracking-[0.8px] 
+           leading-[21px] 
+           text-black 
+           no-underline 
+           transition-all 
+           duration-300;
+    box-shadow: rgba(84,200,245,0.84) 0px -6px 0px 0px inset;
+  }
+
+  .nav-link:hover {
+    box-shadow: rgba(84,200,245,0.84) 0px -21px 0px 0px inset;
+  }
+}
+
+/* Custom animations */
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
