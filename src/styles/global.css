@@ -30,3 +30,15 @@
 .animate-blink {
   animation: blink 1s infinite;
 }
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: white;
+    color: black;
+  }
+}

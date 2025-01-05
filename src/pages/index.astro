@@ -1,105 +1,176 @@
 ---
-import '../styles/global.css';
-import '@fontsource/ibm-plex-mono/400.css';
-import '@fontsource/ibm-plex-mono/600.css';
+import "../styles/global.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/600.css";
 ---
+
 <!doctype html>
-<html lang="en">
+<html lang="en" class="font-mono">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Carlos Castellanos - Software engineer - @karloscodes" />
+		<meta name="description" content="Carlos Castellanos - @karloscodes" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		
+
 		<!-- Open Graph / Social Media Meta Tags -->
 		<meta property="og:title" content="Carlos Castellanos" />
-		<meta property="og:description" content="A Software Engineer practicing and writing about Durable Engineering - where technical excellence meets economic sense. I build software and lead teams." />
+		<meta
+			property="og:description"
+			content="A Software Engineer practicing and writing about Durable Engineering - where technical excellence meets economic sense."
+		/>
 		<meta property="og:image" content="/avatar.jpg" />
 		<meta property="og:url" content="https://karloscodes.com" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Meta Tags -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@karloscodes" />
-		
-		<title>Carlos Castellanos</title>
+		<meta name="twitter:creator" content="@karloscodes" />
+		<meta name="twitter:title" content="Carlos Castellanos - @karloscodes" />
+		<meta
+			name="twitter:description"
+			content="A Software Engineer practicing and writing about Durable Engineering"
+		/>
+		<meta name="twitter:image" content="/avatar.jpg" />
 
-		<style>
-			body {
-				font-family: 'IBM Plex Mono', monospace;
-			}
-		</style>
+		<title>Carlos Castellanos - @karloscodes</title>
 	</head>
-	<body class="bg-white dark:bg-[#121826] min-h-screen transition-colors duration-300">
+	<body
+		class="bg-white dark:bg-black min-h-screen transition-colors duration-300"
+	>
 		<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-4">
 			<!-- Main Content -->
-			<main class="flex flex-col items-center justify-center sm:mp-16 mt-16 sm:mt-32 px-4 sm:px-0">
+			<main
+				class="flex flex-col items-center justify-center sm:mp-16 mt-16 sm:mt-32 px-4 sm:px-0"
+			>
 				<div class="w-32 h-32 sm:w-44 sm:h-44 relative mb-8 sm:mb-16">
-					<img 
-						src="/avatar.jpg" 
-						alt="Carlos Castellanos (@karloscodes) the software engineer" 
-						class="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+					<img
+						src="/avatar.jpg"
+						alt="Carlos Castellanos (@karloscodes) the software engineer"
+						class="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl grayscale"
 						style="object-position: center 1%;"
 					/>
 				</div>
-				
-				<h1 class="text-3xl sm:text-4xl font-bold mb-2 text-center text-[#15141A] dark:text-white">
+
+				<h1
+					class="text-3xl sm:text-4xl font-bold mb-2 text-center text-black dark:text-white tracking-wide"
+				>
 					CARLOS CASTELLANOS
 				</h1>
-				
-				<p class="text-[#2f3237] dark:text-gray-400 mb-4 tracking-wide text-base text-sm md:text-md text-center max-w-lg flex items-center justify-center">
-					A Software Engineer practicing and writing about Durable Engineering - where technical excellence meets economic sense.
+
+				<p
+					class="text-black/80 dark:text-white/80 mb-4 tracking-wide text-base text-sm md:text-md text-center max-w-lg"
+				>
+					A Software Engineer practicing and writing about Durable Engineering -
+					where technical excellence meets economic sense.
 				</p>
-				
-				<div class="flex flex-wrap justify-center gap-4 sm:gap-8 mb-8 sm:mb-12">
-					<a target="_blank" href="https://linkedin.com/in/karloscodes" class="nav-link text-[#15141A] dark:text-gray-200">LINKEDIN</a>
-					<a target="_blank" href="https://x.com/karloscodes" class="nav-link text-[#15141A] dark:text-gray-200">X</a>
-					<a target="_blank" href="https://blog.karloscodes.com" class="nav-link text-[#15141A] dark:text-gray-200">BLOG</a>
+
+				<div class="flex flex-wrap justify-center gap-4 sm:gap-8 mb-12">
+					<a
+						target="_blank"
+						href="https://linkedin.com/in/karloscodes"
+						class="nav-link relative text-black dark:text-white hover:text-black dark:hover:text-white hover:bg-[#3b82f6]/30 dark:hover:bg-[#60a5fa]/30 hover:px-2 hover:-mx-2 rounded transition-all duration-300"
+					>
+						<span class="relative z-10">LINKEDIN</span>
+					</a>
+					<a
+						target="_blank"
+						href="https://x.com/karloscodes"
+						class="nav-link relative text-black dark:text-white hover:text-black dark:hover:text-white hover:bg-[#3b82f6]/30 dark:hover:bg-[#60a5fa]/30 hover:px-2 hover:-mx-2 rounded transition-all duration-300"
+					>
+						<span class="relative z-10">X</span>
+					</a>
+					<a
+						target="_blank"
+						href="https://blog.karloscodes.com"
+						class="nav-link relative text-black dark:text-white hover:text-black dark:hover:text-white hover:bg-[#3b82f6]/30 dark:hover:bg-[#60a5fa]/30 hover:px-2 hover:-mx-2 rounded transition-all duration-300"
+					>
+						<span class="relative z-10">BLOG</span>
+					</a>
 				</div>
 
-				<!-- Products Section -->
-				<div class="flex flex-col gap-4 items-center w-full max-w-sm">
-					<p class="text-sm text-gray-800 dark:text-gray-400 mb-4 font-medium tracking-wider">PROJECTS</p>
-					
-					<a 
-						href="https://pomotto.app" 
-						target="_blank"
-						class="w-full inline-flex items-center justify-between px-6 sm:px-8 py-3 rounded-full border border-[#15141A] dark:border-white bg-white dark:bg-transparent text-[#15141A] dark:text-white font-mono text-sm group hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200 border-2"
+				<!-- Projects Section -->
+				<div class="w-full max-w-3xl">
+					<h2
+						class="text-xl sm:text-xl font-semibold text-black dark:text-white mb-8 tracking-wider text-center"
 					>
-						<span class="font-medium">Pomotto.app</span>
-						<svg 
-							class="h-4 w-4 transition-transform group-hover:translate-x-1" 
-							fill="none" 
-							viewBox="0 0 24 24" 
-							stroke="currentColor"
+						PROJECTS
+					</h2>
+
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+						<a
+							href="https://pomotto.app"
+							target="_blank"
+							class="group flex flex-col p-6 rounded-2xl bg-white dark:bg-black border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-200"
 						>
-							<path 
-								stroke-linecap="round" 
-								stroke-linejoin="round" 
-								stroke-width="2" 
-								d="M9 5l7 7-7 7"
-							/>
-						</svg>
-					</a>
-					
-					<a 
-						href="https://karloscodes.gumroad.com/l/team-1-1" 
-						target="_blank"
-						class="w-full inline-flex items-center justify-between px-6 sm:px-8 py-3 rounded-full border border-[#15141A] dark:border-white bg-white dark:bg-transparent text-[#15141A] dark:text-white font-mono text-sm group hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200 border-2"
-					>
-						<span class="font-medium">Playbook for team 1:1s</span>
-						<svg 
-							class="h-4 w-4 flex-shrink-0 ml-4 transition-transform group-hover:translate-x-1" 
-							fill="none" 
-							viewBox="0 0 24 24" 
-							stroke="currentColor"
+							<div class="flex items-start justify-between mb-4">
+								<div class="flex-1">
+									<div class="flex items-center gap-2 mb-2">
+										<div
+											class="w-2 h-2 rounded-full bg-black dark:bg-white group-hover:bg-white dark:group-hover:bg-black"
+										>
+										</div>
+										<span class="text-xs font-medium opacity-80"
+											>PRODUCTIVITY</span
+										>
+									</div>
+									<h3 class="font-medium text-lg">pomotto.app</h3>
+									<p class="text-sm mt-2 opacity-70">
+										A Pomodoro timer for Mac that integrates with Do Not Disturb, helps you focus and preserve energy
+									</p>
+								</div>
+								<svg
+									class="h-5 w-5 transform group-hover:translate-x-1 transition-transform"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+								</svg>
+							</div>
+						</a>
+
+						<a
+							href="https://karloscodes.gumroad.com/l/team-1-1"
+							target="_blank"
+							class="group flex flex-col p-6 rounded-2xl bg-white dark:bg-black border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-200"
 						>
-							<path 
-								stroke-linecap="round" 
-								stroke-linejoin="round" 
-								stroke-width="2" 
-								d="M9 5l7 7-7 7"
-							/>
-						</svg>
-					</a>
+							<div class="flex items-start justify-between mb-4">
+								<div class="flex-1">
+									<div class="flex items-center gap-2 mb-2">
+										<div
+											class="w-2 h-2 rounded-full bg-black dark:bg-white group-hover:bg-white dark:group-hover:bg-black"
+										>
+										</div>
+										<span class="text-xs font-medium opacity-80"
+											>LEADERSHIP</span
+										>
+									</div>
+									<h3 class="font-medium text-lg">A playbook for 1:1s</h3>
+									<p class="text-sm mt-2 opacity-70">
+										Sharing my learnings from leading remote teams, with a focus on making 1:1 more meaningful
+									</p>
+								</div>
+								<svg
+									class="h-5 w-5 transform group-hover:translate-x-1 transition-transform"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+								</svg>
+							</div>
+						</a>
+					</div>
 				</div>
 			</main>
 		</div>
