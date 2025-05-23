@@ -1,6 +1,9 @@
-<!doctype html>
-<html lang="en" class="font-mono">
-	<head>
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	<Fragment slot="head">
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
@@ -57,12 +60,9 @@
 				]
 			}
 		</script>
-
-		<script defer src="https://t.getinfinitymetrics.com/y/api/v1/sdk.js"
-		></script>
-	</head>
+	</Fragment>
 	<body
-		class="bg-white dark:bg-black min-h-screen transition-colors duration-300"
+		class="bg-white dark:bg-black min-h-screen transition-colors duration-300 font-mono"
 	>
 		<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-2 lg:py-16">
 			<!-- Main Content -->
@@ -245,4 +245,4 @@
 			</main>
 		</div>
 	</body>
-</html>
+</Layout>
