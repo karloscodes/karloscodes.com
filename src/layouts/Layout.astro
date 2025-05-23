@@ -5,26 +5,8 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-
-		<!-- Generic Meta Tags -->
-		<meta name="description" content="Website Description" />
-
-		<!-- Open Graph Meta Tags -->
-		<meta property="og:title" content="Website Title" />
-		<meta property="og:description" content="Website Description" />
-		<meta property="og:image" content="https://example.com/og-image.jpg" />
-		<meta property="og:url" content="https://example.com/" />
-		<meta property="og:type" content="website" />
-
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="@example" />
-		<meta name="twitter:creator" content="@example" />
-		<meta name="twitter:title" content="Website Title" />
-		<meta name="twitter:description" content="Website Description" />
-		<meta name="twitter:image" content="https://example.com/twitter-image.jpg" />
-
+		<title>Website</title>
+		<slot name="head" />
 		<script defer src="https://t.getinfinitymetrics.com/y/api/v1/sdk.js"></script>
 	</head>
 	<body>
